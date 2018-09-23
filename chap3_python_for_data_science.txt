@@ -1,0 +1,94 @@
+Python for Datascience 
+Wes Mick
+23-9-18
+
+1. Tuple 
+
+convert list into an tuple
+b=tuple(a)
+
+if there is an list in a tuple it can be changed.
+
+(a,b,c)*4
+it will copy the elements 4 times and make a new tuple
+
+Unzipping tuple
+(1,2,3) = a,b,c
+
+Value swapping
+a,b = b,a
+
+values = 1,2,3,4,5
+a,b, *rest = values
+
+a=1
+b=2
+rest= 3,4,5
+
+a.count(2) 
+counts occurence of "2" in tuple or list
+
+2. List
+shorthand is *
+
+list((a,b,c))
+a=list()
+converts tuple into list
+
+a.append => adds in last
+
+a.insert => adds at first
+
+a.remove('a')
+will  remove the first occurence of a
+
+a.pop
+removes an element and returns
+
+a.sort()
+sorts in ascending order
+
+a.sort(key=len)
+sort in terms of length of the string
+
+slicing
+
+a[1:3:2] start=1 end=3(last is exclusive like if end is 3 it will stop at 2) step=2
+
+a.sort & a.sorted (in place and in memory scene)
+
+3. Dict
+
+simple JS objects
+
+dict.get(key,value) if it doesn't find key then it will set 0 hence avoiding error
+
+hash
+generates a key for immuteable data i.e doesn;t include lists
+
+set
+repetion khatam kardyga
+
+union 
+adds two dicts
+
+intersection
+shows intersecting values
+
+3.2. set
+converts array into dict but it has numerous useful operations
+
+
+4. List comprehension, dict comprehension, tuple comprehension, generator comprehension.
+
+5. map()
+applies to every element of list
+
+6. Lambda functions
+a = lambda x: c=x+5 return c
+
+7. try() & except() 
+
+8. Magic fuctions
+%run (runs a certain file)
+
