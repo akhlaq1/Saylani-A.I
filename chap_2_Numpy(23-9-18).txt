@@ -1,0 +1,120 @@
+Numpy 3rd Edition Ivan idris
+Chapter 2
+
+1. arange 
+
+its a generator fucntion
+Gnerator doesn't allocate memory until its iterated and it remebers last value
+
+it contains "yield" instead of "return"
+
+let abc() is a generator
+
+so we will call it by "list(abc())"
+
+2. Tuple
+
+imuteable
+
+3. np.array([arange(2),arange(2)])
+output
+array([[0,1],[0,1]])  ==> 2D array also shape => (2,2)
+
+4. help (array) => gives details
+shorthand array? or use array?? (it'll give sources as well)
+
+5. b = array([[0,1],[0,1]])
+
+if we call a = b[0,0]
+output: 0
+
+6. Data types
+bool (true false)
+int => inti , int8, int32, int64, uinti
+float => float32, float64
+complex => complex64, complex128
+
+7. finfo
+Gives details about a data type.
+
+8. flatten & ravel (methods)
+
+converts an multi dimensional array into a 1D array.
+ravel = sometimes may not return a copy
+flatten = always returns a copy
+
+flatten makes a copy of the data
+
+
+9. dtype (we can define data type of array explicitly)
+
+10. shape (defines shape of array explicitly)
+
+11. variable.dtype.itemsize
+gives bytes used by any variable
+
+12. Character codes
+i, u, f, d refer page 60 of book 
+"s8" s=> string , 8 => 8 bytes or 64 bits
+
+13. np.sctype.Dict() 
+gives all characters for data types 
+
+14. We can create our own custom data types'
+
+t= dtype( [ ("name", s ,40),("price",int) ] )
+t["name"] has a datatype of "name" which is a "string" and has 40 characters
+
+15. slicing
+
+a = [1:10:2] => start = 1, end = 10 , step =2
+
+16. a[1,2,3] , pages = 1, row=2, col = 3
+
+a[::] => output all data
+
+a[0] =. output all data of first pages
+
+a[...,1] output 2nd col of all pages
+
+':' colon represents start end step
+',' comma represents pages rows col  
+
+16. reshape and resize
+reshape((row,col)) changes are in place
+resize((row,col)) changes original data
+
+17. stacking
+connects 2 or more arrays
+vertically , horizontally or depth wise
+
+18. concatenate()
+stacking can be done using concatenate method
+
+np.concatenate(a,axis=0) => vstack or row_stack note: col should be identical
+
+np.concatenate(a,axis=1) => hstack or coloumn_stack note: rows should be identical
+
+19. hsplit => breaks into rows
+or split(a, axis=0)
+
+vsplit => breaks into columns
+or split(a, axis=1)
+
+dsplit => breaks into depths
+
+20. np.ndim (method)
+shows number of dimensions
+
+21. np.size (method) 
+shows number elements
+
+22. np.temsize (method)
+shows bytes used
+
+23. a.flat[[1,2]] = 20,22
+flat searches for values specified in "[]" and replaces it with the given number.
+i.e 1 whereever in array will be replaced by 20 and vice versa
+
+
+
